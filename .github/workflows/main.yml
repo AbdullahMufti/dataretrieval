@@ -30,8 +30,10 @@ jobs:
           node-version: 13
 
       # Runs a set of commands using the runners shell
-      - name: Installing Serge
+      - name: Installing Surge
         run: npm install --global surge
+      - name: Creating Build
+        run: npm run build
 
       - name: deploying using surge
         run: surge ./build ${{secrets.site0}} --token ${{ secrets.TokenSurge }}

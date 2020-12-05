@@ -36,4 +36,4 @@ jobs:
         run: npm run build
 
       - name: deploying using surge
-        run: surge ./build ${{secrets.site0}} --token ${{ secrets.TokenSurge }}
+        run: surge ./build ${{secrets.SITE0}} --token ${{ secrets.TOKENSURGE }}

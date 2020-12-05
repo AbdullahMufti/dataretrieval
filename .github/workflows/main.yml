@@ -36,4 +36,4 @@ jobs:
         run: npm build
 
       - name: deploying using surge
-        run: surge ./build ${{secrets.site0}} --token ${{ secrets.TokenSurge }}
+        run: surge ./build abdullahmuftytrial1.surge.sh --token "a857439e19b88e54163c89b2de2c952f"

@@ -27,7 +27,7 @@ jobs:
       - name: Installing Node modules
         uses: actions/setup-node@v2-beta
         with:
-          node-version: 12
+          node-version: 12.18.2
 
       # Runs a set of commands using the runners shell
       - name: Creating Build
@@ -36,4 +36,4 @@ jobs:
         run: npm install --global surge
 
       - name: deploying using surge
-        run: surge ./build abdullahmuftytrial1.surge.sh --token "a857439e19b88e54163c89b2de2c952f"
+        run: surge ./build abdullahmuftytrial1.surge.sh --token ${{ secrets.TOKENSURGE }}

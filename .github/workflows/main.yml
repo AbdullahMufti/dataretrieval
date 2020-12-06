@@ -33,11 +33,9 @@ jobs:
       - name: Creating Build
         run: npm build
       - name: Installing Surge
-        run: npm install --global surge
+        run: npm install -g surge
 
-      - name: Printing Surfge
-
+      - name: Printing Surge
         run: echo surge ./build abdullahmuftytrial1.surge.sh --token ${{ secrets.TOKENSURGE }}
-
-      - name: deploying using surge
-        run: surge ./build abdullahmuftytrial1.surge.sh --token ${{ secrets.TOKENSURGE }}
+#      - name: deploying using surge
+#        run: surge ./build abdullahmuftytrial1.surge.sh --token ${{ secrets.TOKENSURGE }}
